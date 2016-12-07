@@ -22,11 +22,12 @@
             android:layout_height="180dp">
 
             <ImageView
+                android:transitionName="image"
                 android:id="@+id/pic"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="@android:color/darker_gray"
-                android:scaleType="centerCrop"
+                android:scaleType="fitXY"
                 />
 
             <TextView
@@ -94,7 +95,8 @@
                     android:layout_marginTop="20dp"
                     android:textColor="@color/colorLearn"
                     android:textSize="18sp"
-                    android:text="@string/learn"/>
+                    android:text="@string/learn"
+                    android:background="?attr/selectableItemBackgroundBorderless"/>
             </LinearLayout>
         </LinearLayout>
     </LinearLayout>
